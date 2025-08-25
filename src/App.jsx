@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as HashRouter, Router, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import HomeBody from "./components/main/home/HomeBody";
@@ -49,10 +49,12 @@ const App = () => {
   return (
     <div>
       <CartProvider>
+        <HashRouter>
         <Router>
           {/* 5. Use the new layout component */}
           <AppLayout />
         </Router>
+        </HashRouter>
       </CartProvider>
     </div>
   );
