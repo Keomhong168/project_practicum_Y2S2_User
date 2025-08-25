@@ -1,0 +1,70 @@
+.remark-page-container {
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.remark-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  padding: 1rem;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.remark-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.remark-item-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.remark-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.remark-item-details .item-name {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.remark-item-details .item-price {
+  margin: 0;
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.remark-form .form-label {
+  font-weight: 600;
+}
+
+.remark-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}

@@ -1,0 +1,87 @@
+/* src/components/SearchBar.css */
+
+.search-container {
+  position: relative;
+  width: 200px;
+  height: 42px;
+  /* Add a transition for smooth resizing */
+  transition: width 0.5s ease;
+}
+
+.search-input {
+  height: 100%;
+  width: 50px; /* Start at the same width as the button */
+  border-radius: 25px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  padding: 0;
+  opacity: 0; /* Hidden by default */
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* Animate all property changes for a smooth effect */
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.search-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 42px;
+  height: 42px;
+  z-index: 2; /* Ensure button is on top of the input */
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background-color: white; /* Bootstrap primary blue */
+  color: #333; /* Set icon color to be visible on white */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for button */
+}
+
+/* Position and style both icons inside the button */
+.search-btn i {
+  position: absolute;
+  font-size: 1.25rem;
+  /* Animate opacity and transform for the morphing effect */
+  transition: all 0.4s ease;
+}
+
+/* --- Animation States --- */
+
+/* State of the Search Icon (magnifying glass) */
+.search-container .search-btn .bi-search {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.search-container.active .search-btn .bi-search {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+/* State of the Close Icon (X) */
+.search-container .search-btn .bi-x-lg {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+.search-container.active .search-btn .bi-x-lg {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* State of the input field when active */
+.search-container.active .search-input {
+  width: 100%;
+  opacity: 1;
+  border: 1px solid #dee2e6;
+  padding: 0 52px 0 20px; /* Adjusted padding for button */
+}
+
+/* --- Responsive Design --- */
+@media (min-width: 576px) {
+  .search-container {
+    width: 350px;
+  }
+}

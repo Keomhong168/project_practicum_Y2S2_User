@@ -1,0 +1,46 @@
+.red {
+  color: red;
+}
+.header-bar {
+  height: fit-content;
+  background-color: red;
+}
+.icon-home {
+  width: 65px;
+  max-height: fit-content;
+  background-color: rgb(141, 7, 7);
+  position: relative;
+  right: 23px;
+}
+.style-icon-home {
+  font-size: 25px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li,
+li a {
+  list-style: none;
+}
+
+.card-component {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.card-icon {
+  font-size: 36px;
+  color: black;
+  position: relative;
+  bottom: 2px;
+}
+.right-side {
+  position: relative;
+  right: 13px;
+}
+
+/* header-title */
+

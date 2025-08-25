@@ -1,0 +1,6 @@
+.footer-cantainer {
+  height: 250px;
+  background-color: var(--bg-red);
+  color: #ffffff;
+  text-align: center;
+}

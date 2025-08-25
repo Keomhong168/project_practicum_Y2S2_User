@@ -1,0 +1,135 @@
+.cart-container {
+  width: 100%;
+  /* background-color: #fff; */
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-header {
+  color: white;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem
+}
+
+.cart-header .bi-arrow-left, .cart-header .bi-cart3 {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cart-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cart-body {
+  padding: 0.5rem 1.5rem;
+  min-height: 150px;
+  height: 68vh;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+}
+
+.item-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.item-price {
+  font-size: 1.1rem;
+}
+
+/* Item Controls (Quantity buttons) */
+.quantity-control .quantity-btn {
+  background-color: #f8f9fa;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.quantity-control .quantity-number {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Total Section */
+.cart-total-section {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid black;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-size: 1.1rem;
+  z-index: 1;
+}
+
+.total-text {
+  margin: 0;
+  font-weight: 500;
+}
+
+.total-price {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.cart-footer {
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.cart-footer .btn {
+  width: 48%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-secondary-custom {
+    background-color: #f2f2f2;
+    border-color: #f2f2f2;
+    color: #333;
+}
+
+@media (max-width: 576px) {
+  .cart-container {
+    max-width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 0 !important;
+  }
+}
+.cart-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-footer-control{
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}

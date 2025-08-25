@@ -1,0 +1,52 @@
+.booking-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: fit-content; /* Adjusts height based on content */    
+  padding: 30px 20px 50px 20px;
+  
+}
+
+/* The main card holding the form */
+.booking-card {
+  width: 100%;
+  max-width: 450px; /* Controls the maximum width of the form */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+}
+
+/* Style for the "Booking Form" title */
+.booking-title {
+  color: #dc3545; /* Bootstrap's danger color (red) */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Custom styles for the submit button */
+.btn-submit {
+  background-color: #dc3545;
+  color: white;
+  font-weight: bold;
+  padding: 12px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Darker red on hover for a nice feedback effect */
+.btn-submit:hover {
+  background-color: #c82333;
+  color: white;
+}
+
+/* Styling the placeholders to be less prominent */
+.form-control::placeholder {
+  color: #6c757d;
+  opacity: 0.8; 
+}
+
+/* Makes date and time inputs look more like placeholders when empty */
+.form-control[type="date"]:invalid,
+.form-control[type="time"]:invalid {
+    color: #6c757d;
+}

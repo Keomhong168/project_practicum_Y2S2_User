@@ -1,0 +1,51 @@
+.feedback-header {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.feedback-header h1 {
+    font-weight: 700;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.feedback-body {
+    padding: 2rem;
+}
+
+.feedback-textarea {
+    border-radius: 0.5rem;
+    min-height: 120px;
+}
+
+.btn-send {
+    background-color: #dc3545;
+    color: white;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    float: right;
+    transition: background-color 0.2s;
+}
+
+.btn-send:hover {
+    background-color: #c82333;
+    color: white;
+}
+
+/* For small mobile phones (e.g., iPhone and screens around 360px) */
+@media (max-width: 480px) {
+    .feedback-header h1 {
+        font-size: 1.5rem; /* Reduce header font size */
+    }
+    .feedback-body {
+        padding: 1rem; /* Reduce padding */
+    }
+    .rating-stars svg {
+        font-size: 2rem !important; /* Make stars smaller */
+        margin-right: 0.25rem !important;
+    }
+
+}

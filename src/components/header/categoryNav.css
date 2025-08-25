@@ -1,0 +1,92 @@
+.category-nav-bar {
+  padding: 0.5rem;
+}
+
+.nav-pills .nav-item {
+  margin: 0 8px; /* Adds space between the buttons */
+}
+
+/* Style for the INACTIVE buttons */
+.nav-pills .nav-link {
+  background-color: white;
+  color: red;
+  border-radius: 50px;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+/* Style for the ACTIVE button and on hover */
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+  background-color: #c00000;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+.active-category {
+  background-color: #c00000 !important;
+  color: white !important;
+  border: 2px solid rgba(255, 255, 255, 0.7) !important;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2) !important;
+}
+.nav-link {
+  width: 120px;
+  text-align: center;
+  border-radius: 50px !important;
+}
+@media (max-width: 768px) {
+  .nav-pills .nav-link {
+    width: 100px;
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 8px 10px;
+  }
+  .nav-pills .nav-item {
+    margin: 0 4px; /* Adds space between the buttons */
+  }
+}
+@media (max-width: 600px) {
+  .nav-pills .nav-link {
+    width: 75px;
+    font-size: 12px; /* Adjust font size for smaller screens */
+    font-weight: 500;
+    padding: 8px 8px;
+  }
+  .nav-pills .nav-item {
+    margin: 0 2px; /* Adds space between the buttons */
+  }
+}
+@media (max-width: 400px) {
+  .nav-pills .nav-link {
+    width: 68px;
+    font-size: 11px; /* Adjust font size for smaller screens */
+    font-weight: 500;
+    padding: 8px 8px;
+  }
+  .nav-pills .nav-item {
+    margin: 0 1px; /* Adds space between the buttons */
+  }
+}
+@media (max-width: 360px) {
+  .nav-pills .nav-link {
+    width: 66.5px;
+    font-size: 11px; /* Adjust font size for smaller screens */
+    font-weight: 500;
+    padding: 8px 8px;
+  }
+  .nav-pills .nav-item {
+    margin: 0 1px; /* Adds space between the buttons */
+  }
+}
+@media (max-width: 320px) {
+  .nav-pills .nav-link {
+    width: 58.5px;
+    font-size: 11px; /* Adjust font size for smaller screens */
+    font-weight: 500;
+    padding: 8px 8px;
+  }
+  .nav-pills .nav-item {
+    margin: 0 1px; /* Adds space between the buttons */
+  }
+}

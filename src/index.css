@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-red: #ff0011;
+}
+
+.bg-red {
+  background-color: var(--bg-red);
+}
+.border-red {
+  border: 1px solid var(--bg-red) !important;
+}
