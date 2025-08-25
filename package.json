@@ -1,16 +1,16 @@
 {
+  "homepage": "https://Keomhong168.github.io/web-menu-food",
   "name": "web-menu-food",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "index": "https://Keomhong168.github.io/web-menu-food",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
