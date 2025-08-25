@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Keomhong168.github.io/project_practicum_Y2S2_User",
+  "homepage": "https://Keomhong168.github.io/project_practicum_Y2S2_User/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
