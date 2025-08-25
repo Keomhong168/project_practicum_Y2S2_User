@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Keomhong168.github.io/web-menu-food",
+  "index": "https://Keomhong168.github.io/web-menu-food",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
