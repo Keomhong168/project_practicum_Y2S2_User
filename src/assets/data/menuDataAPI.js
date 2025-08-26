@@ -639,7 +639,7 @@ const menuDataAPI = {
 
   contactInfo: {
     phoneNumber: "+855 12 345 678",
-    email: "contact@yourrestaurant.com",
+    email: "Restaurant@gmail.com",
     physicalAddress: "123 Food Street, Phnom Penh, Cambodia",
     socials: {
       telegram: "https://t.me/yourrestaurant",

@@ -19,7 +19,7 @@ const ContectInfo = () => {
       </div>
       <div className="info-container">
         <h6 className="contectInfo-title">Email:</h6>
-        <p className="contectInfo-fs">latuspanda@gmail.com</p>
+        <p className="contectInfo-fs">Restaurant@gmail.com</p>
         <h6>Follow us:</h6>
         <p>
           <a href="https://www.facebook.com" className="text-white me-2">
