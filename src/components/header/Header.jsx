@@ -8,14 +8,14 @@ const Header = () => {
     <header className="container-fluit header-bar d-flex flex-column">
       <ul className="header-icon pt-2 d-flex flex-row position-relative justify-content-between">
         <li className="icon-home p-1 rounded-5">
-          <NavLink className="style-icon-home" to="/">
+          <NavLink className="style-icon-home" to="/project_practicum_Y2S2_User/">
             <i className="bi bi-house"></i>
           </NavLink>
         </li>
         <li className="d-flex flex-row right-side d-flex gap-2">
           <SearchBar />
           <div className="card-component">
-            <NavLink className="card-icon"  to="/cart">
+            <NavLink className="card-icon"  to="/project_practicum_Y2S2_User/cart">
               <i className="bi bi-basket-fill"></i>
             </NavLink>
           </div>

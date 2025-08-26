@@ -54,7 +54,7 @@ const OrderSummary = () => {
       });
 
       clearCart();
-      navigate("/");
+      navigate("/project_practicum_Y2S2_User/");
     } catch (error) {
       await Swal.fire({
         icon: "error",

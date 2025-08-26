@@ -20,7 +20,7 @@ const CartPage = () => {
   const handleRemarkClick = (e, item) => {
     e.preventDefault();
     // Navigate to the Remark page and pass the entire item object in the state
-    navigate("/remark", { state: { item } });
+    navigate("/project_practicum_Y2S2_User/remark", { state: { item } });
   };
   return (
     <div className="container-fluit d-flex justify-content-center align-items-center">
@@ -47,7 +47,7 @@ const CartPage = () => {
                       ${item.price.toFixed(2)}
                     </p>
                     <NavLink
-                      to="/remark" // The path is simply /remark
+                      to="/project_practicum_Y2S2_User/remark" // The path is simply /remark
                       state={{ item }} // Pass the item object in the state prop
                       className="edit-link text-decoration-none bg-red text-light px-1 border border-0 border-black"
                     >
@@ -100,7 +100,7 @@ const CartPage = () => {
           </button>
           <NavLink
             className="btn btn-danger border-1 border-black"
-            to="/summaryOrder"
+            to="/project_practicum_Y2S2_User/summaryOrder"
           >
             Next
           </NavLink>

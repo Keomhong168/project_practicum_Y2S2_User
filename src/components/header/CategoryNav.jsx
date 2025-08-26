@@ -5,11 +5,11 @@ import "./CategoryNav.css";
 
 const CategoryNav = () => {
   const categories = [
-    { name: "Home", path: "/" },
-    { name: "Food", path: "/food" },
-    { name: "Drink", path: "/drink" },
-    { name: "Dessert", path: "/dessert" },
-    { name: "Booking", path: "/booking" },
+    { name: "Home", path: "/project_practicum_Y2S2_User/" },
+    { name: "Food", path: "/project_practicum_Y2S2_User/food" },
+    { name: "Drink", path: "/project_practicum_Y2S2_User/drink" },
+    { name: "Dessert", path: "/project_practicum_Y2S2_User/dessert" },
+    { name: "Booking", path: "/project_practicum_Y2S2_User/booking" },
   ];
 
   // State to keep track of the active category. 'Home' is the default.
@@ -27,8 +27,9 @@ const CategoryNav = () => {
           <li className="nav-item" key={category.name}>
             <NavLink
               to={category.path}
+              end={category.name === "Home"}
               className={({ isActive }) =>
-                `nav-link ${isActive ? "active active-category" : ""}`
+                `nav-link ${isActive ? "active-category" : ""}`
               }
             >
               {category.name}

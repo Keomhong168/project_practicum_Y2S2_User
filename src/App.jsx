@@ -19,9 +19,9 @@ import { CartProvider } from './components/cart/CartContext';
 // 2. Helper component that contains the logic
 const AppLayout = () => {
   const location = useLocation(); // This hook gives us the current URL details
-  const isCartPage = location.pathname === '/cart'; // Check if the path is exactly '/cart'
-  const isSummaryPage = location.pathname === '/summaryOrder'; // Check if the path is exactly '/summaryOrder'
-  const isProductDetailPage = location.pathname ==="/remark"; // Check if the path is exactly '/remark'
+  const isCartPage = location.pathname === '/project_practicum_Y2S2_User/cart'; // Check if the path is exactly '/cart'
+  const isSummaryPage = location.pathname === '/project_practicum_Y2S2_User/summaryOrder'; // Check if the path is exactly '/summaryOrder'
+  const isProductDetailPage = location.pathname ==="/project_practicum_Y2S2_User/remark"; // Check if the path is exactly '/remark'
 
   return (
     <>
@@ -29,14 +29,14 @@ const AppLayout = () => {
       {!isCartPage && !isSummaryPage && !isProductDetailPage && <Header />}
 
       <Routes>
-        <Route path="/" element={<HomeBody />} />
-        <Route path="/food" element={<FoodBody />} />
-        <Route path="/drink" element={<DrinkBody />} />
-        <Route path="/dessert" element={<Dessert />} />
-        <Route path="/booking" element={<Booking />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/summaryOrder" element={<SummaryOrder />} />
-        <Route path="/remark" element={<Remark />} /> 
+        <Route path="/project_practicum_Y2S2_User/" element={<HomeBody />} />
+        <Route path="/project_practicum_Y2S2_User/food" element={<FoodBody />} />
+        <Route path="/project_practicum_Y2S2_User/drink" element={<DrinkBody />} />
+        <Route path="/project_practicum_Y2S2_User/dessert" element={<Dessert />} />
+        <Route path="/project_practicum_Y2S2_User/booking" element={<Booking />} />
+        <Route path="/project_practicum_Y2S2_User/cart" element={<Cart />} />
+        <Route path="/project_practicum_Y2S2_User/summaryOrder" element={<SummaryOrder />} />
+        <Route path="/project_practicum_Y2S2_User/remark" element={<Remark />} /> 
       </Routes>
 
       {/* 4. Conditionally render the Footer. If not the cart page, show it. */}
