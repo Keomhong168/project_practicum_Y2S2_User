@@ -50,10 +50,8 @@ const App = () => {
     <div>
       <CartProvider>
         <HashRouter>
-        <Router>
           {/* 5. Use the new layout component */}
           <AppLayout />
-        </Router>
         </HashRouter>
       </CartProvider>
     </div>
